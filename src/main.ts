@@ -18,3 +18,18 @@ const firstOperand = window.prompt
 const secondOperand = window.prompt
 const firstNum = Number(firstOperand)
 const secondNum = Number(secondOperand)
+
+const sum = firstNum + secondNum
+console.log(sum)
+
+const difference = firstNum - secondNum
+console.log(difference)
+
+const product = firstNum * secondNum
+console.log(product)
+
+const quotient = firstNum / secondNum
+console.log(quotient)
+
+const remainder = firstNum % secondNum
+console.log(remainder)
