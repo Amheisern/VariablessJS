@@ -37,20 +37,29 @@ const remainder = firstNum % secondNum
 console.log(remainder)
 
 // ---------------------------------------------arrays --------------------------------
-type stats = {
-  smallest: 'smallest'
-  largest: 'largest'
-  sum: 'arraySum'
-  average: 'average'
-}
 const numbers = [
   17235, 49260, 44379, 49202, 20771, 16378, 49436, 45930, 2748, 45130,
 ]
 console.log(numbers)
-let smallest = Math.min(...numbers)
-let largest = Math.max(...numbers)
+const smallest = Math.min(...numbers)
+const largest = Math.max(...numbers)
 console.log(smallest + largest)
-let arraySum = numbers.reduce((a, b) => a + b, 0)
+const arraySum = numbers.reduce((a, b) => a + b, 0)
 console.log(arraySum)
-let average = arraySum / numbers.length || 0
+const average = arraySum / numbers.length || 0
 console.log(average)
+const stats = {
+  smallest: smallest,
+  largest: largest,
+  sum: arraySum,
+  average: average,
+}
+console.log(stats)
+
+const evenNumbers = numbers.filter((item) => item % 2 == 0)
+const oddNumbers = numbers.filter((item) => item % 2 == 1)
+const sumOfOddNumber = oddNumbers.reduce((a, b) => a + b, 0)
+console.log('these are a sum of the odd numbers', sumOfOddNumber)
+console.log(evenNumbers.length)
+const sumOfEvenNumber = evenNumbers.reduce((a, b) => a + b, 0)
+console.log(sumOfEvenNumber)
