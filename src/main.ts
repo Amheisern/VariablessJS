@@ -76,3 +76,9 @@ function yelling(words: string[]): string[] {
   return words.map((word) => word.toUpperCase())
 }
 console.log(yelling)
+
+function stringyIndexes(strings: string[]): string[] {
+  // Replace the code below with your own code
+  return strings.map((current, index) => current + ' is at index ' + index)
+}
+console.log(stringyIndexes)
