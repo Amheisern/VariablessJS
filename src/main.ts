@@ -82,3 +82,9 @@ function stringyIndexes(strings: string[]): string[] {
   return strings.map((current, index) => current + ' is at index ' + index)
 }
 console.log(stringyIndexes)
+
+function onlyTheEvenSurvive(numbers: number[]): number[] {
+  // Replace the code below with your own code
+  return numbers.filter((number) => number % 2 === 0)
+}
+console.log(onlyTheEvenSurvive)
