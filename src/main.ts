@@ -70,3 +70,9 @@ function doubleTrouble(numbers: number[]): number[] {
   return numbers.map((n) => n * 2)
 }
 console.log(doubleTrouble)
+
+function yelling(words: string[]): string[] {
+  // Replace the code below with your own code
+  return words.map((word) => word.toUpperCase())
+}
+console.log(yelling)
