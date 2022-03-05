@@ -64,3 +64,9 @@ console.log(evenNumbers.length)
 const sumOfEvenNumber = evenNumbers.reduce((a, b) => a + b, 0)
 console.log(sumOfEvenNumber)
 console.log(sumOfEvenNumber + sumOfOddNumber)
+//
+function doubleTrouble(numbers: number[]): number[] {
+  // Replace the code below with your own code
+  return numbers.map((n) => n * 2)
+}
+console.log(doubleTrouble)
